@@ -1,0 +1,2 @@
+export const ADD_MESSAGE = 'ADD_MESSAGE'
+export const MESSAGES_FETCHED = 'MESSAGES_FETCHED'

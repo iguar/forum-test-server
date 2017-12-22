@@ -1,8 +1,4 @@
-let messages = [
-    {title: 'First message', body: 'First message body'},
-    {title: 'Second message', body: 'Second message body'},
-    {title: 'Third message', body: 'Third message body'},
-];
+let messages = [];
 
 const forum =  {
     getMessages(req, res){
@@ -16,7 +12,7 @@ const forum =  {
 
         } else {
             messages.push({title: req.body.title, body: req.body.body});
-            res.status(200);
+            res.status(200).send();
         }
     }
 };
